@@ -16,20 +16,21 @@
 
 ### 0) Team Formation
 
-This is a solo project. I act as Product Owner, Mobile Engineer, API Integrator, and QA/Release: I define scope and acceptance criteria, build the Flutter app, integrate the TrueNAS REST API with secure token-based auth, test endpoints in Postman, and prepare releases. I keep a brief 09:00 daily check-in note (yesterday/today/blockers). Git workflow uses `main`, `dev`, and `feat/...` branches merged via PR. Work is tracked in GitHub Issues/Projects (list view); decisions in Notion; development in Android Studio + Flutter.
+This is a solo project. I act as Product Owner, Mobile Engineer, API Integrator, and QA/Release. I define scope and acceptance criteria, build the Flutter app, integrate the TrueNAS REST API with secure token‑based auth, test endpoints in Postman, and prepare releases. I keep a brief 09:00 daily check‑in note (yesterday/today/blockers). Git workflow uses `main`, `dev`, and `feat/...` branches merged via PR. Work is tracked in GitHub Issues/Projects (list view); decisions in Notion; development in Android Studio + Flutter.
 
 ---
 
 ### 1) Research & Brainstorming
 
 **Methods:** Mind Mapping, SCAMPER, “How Might We…”, and a competitive scan (app stores and TrueNAS/self‑hosted forums).
-**Evidence (recommended artefacts):** a photo of the mind map, a raw list of ideas, and Crazy‑8s sketches.
+
+**Evidence included:** sketches, a mind map, and a raw ideas list (Crazy‑8s).
 
 ---
 
 ### 2) Initial Ideas (explored & rejected)
 
-Two alternatives were thoroughly explored and rejected due to scope and risk.
+Two alternative concepts were explored; summaries follow.
 
 **Multi‑NAS/Cloud backup orchestrator.** Orchestrate backups across ZFS/BTRFS/SMB/S3 from one app. Rejected for very high cross‑platform complexity, critical restore paths and data‑loss risk — too big for an MVP.
 
@@ -59,7 +60,7 @@ Two alternatives were thoroughly explored and rejected due to scope and risk.
 | Multi‑NAS/Cloud backup orchestrator |    4   |      2      |   2  |       3      |        4        |     4    |        3.00        |
 | “Jarvis” assistant                  |    4   |      2      |   1  |       2      |        4        |     5    |        2.65        |
 
-**Reading:** **TrueNAS Mobile** balances value, risk, and speed. The other two ideas exceed MVP scope or timeline.
+**Reading:** **TrueNAS Mobile** offers the best value‑to‑risk‑to‑speed trade‑off for Stage 1.
 
 ---
 
@@ -105,7 +106,10 @@ The idea funnel is documented with strengths, weaknesses, and reasons for reject
 
 ### 7) Plan & Milestones
 
-Week 1 sets the foundation: wireframes, data contracts, Material 3 theme, navigation/state, and a Mock API. Week 2 delivers the core: login with secure storage, the dashboard, reliable ON/OFF for services, basic controller tests, and lint/CI. Week 3 polishes: clear error/loading states, biometrics, a README, a short demo video, and tester feedback. (Optional Week 4 adds a read-only disks/datasets view.)
+* **W1 — Foundation:** wireframes, data contracts, Material 3 theme, navigation/state, Mock API.
+* **W2 — Core MVP:** login + secure storage, dashboard, reliable ON/OFF for services, basic controller tests, lint/CI.
+* **W3 — Polish & demo:** error/loading states, biometrics, README, short demo video, tester feedback.
+* **(Stretch) W4 — Read‑only view:** disks/datasets.
 
 ---
 
@@ -152,17 +156,15 @@ Self-signed certificates and home-network quirks are handled with safe paths (va
 
 ### 0) Formation de l’équipe (Team Formation)
 
-Je mène le projet en solo pour l’instant. Concrètement, j’endosse à la fois le rôle de “product owner” (je clarifie le besoin et les critères d’acceptation) et celui de développeur mobile/integ API (je code l’app Flutter, je branche l’API TrueNAS, je prépare les builds). Pour rester carré, je garde aussi un petit chapeau “QA/Release” : un plan de tests simple et les éléments de publication.
+Je mène le projet en solo. J’assure le rôle de **product owner** et de **développeur mobile / intégration API**. Je clarifie le besoin et les critères d’acceptation, je code l’app Flutter, je connecte l’API TrueNAS et je prépare les builds. Je gère aussi la **QA/Release** avec un plan de tests simple et les éléments de publication.
 
-Côté organisation, je reste pragmatique : un court message chaque matin à 09:00 dans une note de suivi (hier / aujourd’hui / blocages). Dans Git, je travaille avec `main` (stable), `dev` (intégration) et des branches `feat/<sujet>`. Je ne merge qu’avec une PR, même en solo, pour garder l’historique propre. Ma “Definition of Done” tient en quatre points : l’app compile sur mon téléphone et l’émulateur, les tests unitaires des contrôleurs passent, le lint est propre, et le README est à jour (avec une courte capture vidéo si possible).
-
-Outils : un dépôt GitHub (ex. `github.com/<user>/truenas-mobile`) avec suivi des tâches via GitHub **Issues** et **Projects** (vue liste), Android Studio + Flutter pour le dev, **Postman** pour valider les endpoints TrueNAS, et une note Notion/Google Docs pour les décisions.
+Côté organisation : une courte note quotidienne à 09:00 (hier / aujourd’hui / blocages). Dans Git : `main` (stable), `dev` (intégration) et des branches `feat/...`, avec merges via PR. Outils : GitHub Issues/Projects (vue liste), Android Studio + Flutter, Postman, Notion/Docs.
 
 ---
 
 ### 1) Recherche & Brainstorming
 
-Je suis parti de mon usage quotidien : quand je veux juste vérifier le NAS depuis le canapé, l’interface Web n’est pas agréable sur téléphone et ça prend trop de clics. J’ai listé ces irritations, puis j’ai fait un rapide mind map et quelques croquis (Crazy‑8s) pour tester différentes pistes. J’ai aussi regardé ce qui existe sur les stores et sur les forums TrueNAS/self‑hosted pour voir où une petite app pouvait réellement aider. De là, plusieurs idées sont sorties, dont deux “grosses” que j’ai finalement écartées (voir ci‑dessous), et TrueNAS Mobile qui restait la plus simple à rendre utile vite.
+Je suis parti de mon usage quotidien : quand je veux juste vérifier le NAS depuis le canapé, l’interface Web n’est pas agréable sur téléphone et ça prend trop de clics. J’ai listé ces irritations, puis réalisé un **mind map** et quelques **croquis (Crazy‑8s)** pour explorer les pistes. J’ai aussi regardé ce qui existe sur les stores et sur les forums TrueNAS/self‑hosted pour voir où une petite app pouvait réellement aider. De là, plusieurs idées sont sorties, dont deux “grosses” que j’ai finalement écartées (voir ci‑dessous), et TrueNAS Mobile qui restait la plus simple à rendre utile vite.
 
 J’ai utilisé le mind mapping et formulé quelques questions « How might we » pour explorer les opportunités (ex. : Comment réduire les étapes pour désactiver un service ? Comment sécuriser un accès mobile sans stocker le mot de passe ?).
 
@@ -172,9 +174,9 @@ J’ai utilisé le mind mapping et formulé quelques questions « How might we �
 
 Au démarrage, deux pistes fortes ont été étudiées puis écartées pour des raisons de périmètre et de risque.
 
-**Orchestrateur de sauvegardes multi‑NAS/Cloud.** L’idée consistait à piloter depuis une application unique des plans de sauvegarde vers plusieurs cibles hétérogènes (ZFS/BTRFS/SMB/S3). Si la proposition de valeur est élevée pour des environnements complexes, la réalité technique l’est tout autant : interopérabilité multi‑fournisseurs, scénarios de restauration critiques, risques de perte de données et exigence d’une traçabilité irréprochable. L’effort d’ingénierie et de validation dépasse largement ce qu’un MVP académique peut absorber. Cette idée a donc été classée « hors‑scope » pour l’instant.
+**Orchestrateur de sauvegardes multi‑NAS/Cloud.** Piloter des sauvegardes vers ZFS/BTRFS/SMB/S3 depuis une seule app. **Intéressant**, mais **trop complexe et risqué** pour un MVP (interop multi‑fournisseurs, restauration critique, risque de perte de données).
 
-**Assistant « Jarvis » (ASR/NLP).** L’ambition ici était de proposer un assistant vocal généraliste (détection de mot‑clé, reconnaissance vocale, compréhension du langage, gestion de dialogue et actions). Malgré un fort potentiel d’expérience utilisateur, la chaîne technologique requise (STT/NLU on‑device ou cloud, modèles ML, latence, confidentialité) impose une complexité et un temps d’intégration incompatibles avec les contraintes du projet. L’idée est mise en réserve pour une exploration ultérieure, possiblement avec un périmètre beaucoup plus restreint.
+**Assistant « Jarvis » (ASR/NLP).** Assistant vocal généraliste (wake word, STT/NLU, dialogues). **Attractif**, mais **chaîne ML lourde** et **temps d’intégration trop long** pour le calendrier.
 
 #### Idées rejetées — synthèse
 
@@ -230,7 +232,10 @@ Côté technique, je reste sobre : **Flutter/Dart**, **Material 3** pour le look
 
 ### 7) Plan & Jalons
 
-Je découpe en semaines pour rester lisible. La première semaine, je pose le squelette : écrans, navigation, état, thème et une fausse API pour développer sans dépendre d’un NAS. La deuxième, je fais le cœur : l’écran de connexion (avec stockage sécurisé), le dashboard et les services ON/OFF avec des messages d’erreur clairs. La troisième, je peaufine : gestion des états de chargement et des erreurs, ajout de la biométrie, README propre et une courte vidéo de démo pour Holberton. Si j’ai de la marge, j’ajoute une vue en lecture seule des disques et datasets.
+* **S1 — Squelette :** maquettes, contrats de données, thème, navigation (GoRouter), état (Riverpod), Mock API.
+* **S2 — Cœur du MVP :** login + stockage sécurisé, dashboard, ON/OFF services, tests de base, lint/CI.
+* **S3 — Finitions & démo :** états d’erreur/chargement, biométrie, README, vidéo de démo, retours testeurs.
+* **(Option) S4 — Lecture seule :** disques/datasets.
 
 ---
 
