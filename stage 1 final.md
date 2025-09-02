@@ -7,7 +7,9 @@
 ## 🇬🇧 English Version
 
 > **Working title:** TrueNAS Mobile
+> 
 > **Author:** Ivane Bagashvili (Holberton School)
+> 
 > **Date:** *2025-08-18 to 2025-08-29*
 
 ---
@@ -140,7 +142,9 @@ Self-signed certificates and home-network quirks are handled with safe paths (va
 ## 🇫🇷 Version Française
 
 > **Titre provisoire du projet :** TrueNAS Mobile
+> 
 > **Auteur :** Ivane Bagashvili (Holberton School)
+> 
 > **Date :** *18–29 août 2025*
 
 ---
