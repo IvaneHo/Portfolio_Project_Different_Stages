@@ -1,11 +1,11 @@
 # Stage 2 — Project Charter / Charte de projet  
 *Version 1.0 — 2025-09-12*  
 
-[🇬🇧 English](#english—project-charter) · [🇫🇷 Français](#français—charte-de-projet)  
+[🇬🇧 English](#english) · [🇫🇷 Français](#fr)  
 
 ---
 
-## English — Project Charter  
+## English — Project Charter {#english}
 
 ### 1. Project Objectives (Purpose + SMART goals)
 
@@ -72,7 +72,7 @@ Dependencies include the availability of the TrueNAS v2 API, stable local networ
 
 ---
 
-## Français — Charte de projet  
+## Français — Charte de projet {#fr}
 
 ### 1. Objectifs (But + SMART)
 
