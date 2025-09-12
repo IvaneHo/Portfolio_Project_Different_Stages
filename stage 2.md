@@ -1,11 +1,16 @@
 # Stage 2 — Project Charter / Charte de projet  
-*Version 1.0 — 2025-09-12*  
+[🇬🇧 English](#-english-version) · [🇫🇷 Français](#-version-française)
 
-[🇬🇧 English](#english--project-charter) · [🇫🇷 Français](#francais--charte-de-projet)  
+> **Working title:** TrueNAS Mobile
+> 
+> **Author:** Ivane Bagashvili (Holberton School)
+> 
+> **Date:** *2025-09-01 to 2025-09-12*
+ 
 
 ---
 
-## English — Project Charter  
+## 🇬🇧 English Version
 
 ### 1. Project Objectives (Purpose + SMART goals)
 
@@ -72,7 +77,13 @@ Dependencies include the availability of the TrueNAS v2 API, stable local networ
 
 ---
 
-## Français — Charte de projet  
+## 🇫🇷 Version Française
+
+> **Titre provisoire du projet :** TrueNAS Mobile
+> 
+> **Auteur :** Ivane Bagashvili (Holberton School)
+> 
+> **Date :** *01–12 septembre 2025*  
 
 ### 1. Objectifs (But + SMART)
 
