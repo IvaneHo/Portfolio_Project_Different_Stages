@@ -13,6 +13,7 @@ Open NAS Manager is a mobile app that delivers fast, secure TrueNAS monitoring a
 Open NAS Manager est une application mobile qui offre un suivi TrueNAS rapide et sécurisé avec contrôle des services en un geste. Le MVP couvre la connexion token + biométrie, un tableau de bord léger (CPU/RAM/uptime), des bascules fiables (SMB/NFS/SSH) et **l’accès distant via Tailscale** lorsque l’appareil et le serveur sont sur le même tailnet.
 
 ---
+[🇬🇧 English](#-english-version) · [🇫🇷 Français](#-version-française)
 
 ## 🇬🇧 English Version
 
