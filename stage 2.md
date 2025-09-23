@@ -1,7 +1,7 @@
 # Stage 2 — Project Charter / Charte de projet  
 [🇬🇧 English](#-english-version) · [🇫🇷 Français](#-version-française)
 
-> **Working title:** TrueNAS Mobile
+> **Working title:** Open NAS Manager
 > 
 > **Author:** Ivane Bagashvili (Holberton School)
 > 
@@ -79,7 +79,7 @@ Dependencies include the availability of the TrueNAS v2 API, stable local networ
 
 ## 🇫🇷 Version Française
 
-> **Titre provisoire du projet :** TrueNAS Mobile
+> **Titre provisoire du projet :** Open NAS Manager
 > 
 > **Auteur :** Ivane Bagashvili (Holberton School)
 > 
