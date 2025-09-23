@@ -6,7 +6,7 @@
 
 ## 🇬🇧 English Version
 
-> **Working title:** TrueNAS Mobile
+> **Working title:** Open NAS Manager
 > 
 > **Author:** Ivane Bagashvili (Holberton School)
 > 
@@ -58,17 +58,17 @@ Two alternative concepts were explored; summaries follow.
 
 | Idea                                | Impact | Feasibility | Time | Monetization | Differentiation | Learning | **Weighted Total** |
 | ----------------------------------- | :----: | :---------: | :--: | :----------: | :-------------: | :------: | :----------------: |
-| **TrueNAS Mobile**                  |    5   |      4      |   4  |       4      |        4        |     4    |      **4.25**      |
+| **Open NAS Manager**                  |    5   |      4      |   4  |       4      |        4        |     4    |      **4.25**      |
 | Multi‑NAS/Cloud backup orchestrator |    4   |      2      |   2  |       3      |        4        |     4    |        3.00        |
 | “Jarvis” assistant                  |    4   |      2      |   1  |       2      |        4        |     5    |        2.65        |
 
-**Reading:** **TrueNAS Mobile** offers the best value‑to‑risk‑to‑speed trade‑off for Stage 1.
+**Reading:** **Open NAS Manager** offers the best value‑to‑risk‑to‑speed trade‑off for Stage 1.
 
 ---
 
 ### 4) Decision & Refinement
 
-Why **TrueNAS Mobile** was retained: clear mobile need (see status and toggle a service in seconds), direct feasibility with TrueNAS v2 REST over LAN, and an obvious roadmap (notifications, multi‑server, WebDAV file browser, remote access via Tailscale/Cloudflare Tunnel).
+Why **Open NAS Manager** was retained: clear mobile need (see status and toggle a service in seconds), direct feasibility with TrueNAS v2 REST over LAN, and an obvious roadmap (notifications, multi‑server, WebDAV file browser, remote access via Tailscale/Cloudflare Tunnel).
 
 **Problem statement:** too many steps on mobile, no secure token storage + biometrics, no quick alerts (planned post‑MVP).
 
@@ -141,7 +141,7 @@ Self-signed certificates and home-network quirks are handled with safe paths (va
 
 ## 🇫🇷 Version Française
 
-> **Titre provisoire du projet :** TrueNAS Mobile
+> **Titre provisoire du projet :** Open NAS Manager
 > 
 > **Auteur :** Ivane Bagashvili (Holberton School)
 > 
@@ -159,7 +159,7 @@ Côté organisation : une courte note quotidienne à 09:00 (hier / aujourd’hui
 
 ### 1) Recherche & Brainstorming
 
-Je suis parti de mon usage quotidien : quand je veux juste vérifier le NAS depuis le canapé, l’interface Web n’est pas agréable sur téléphone et ça prend trop de clics. J’ai listé ces irritations, puis réalisé un **mind map** et quelques **croquis (Crazy‑8s)** pour explorer les pistes. J’ai aussi regardé ce qui existe sur les stores et sur les forums TrueNAS/self‑hosted pour voir où une petite app pouvait réellement aider. De là, plusieurs idées sont sorties, dont deux “grosses” que j’ai finalement écartées (voir ci‑dessous), et TrueNAS Mobile qui restait la plus simple à rendre utile vite.
+Je suis parti de mon usage quotidien : quand je veux juste vérifier le NAS depuis le canapé, l’interface Web n’est pas agréable sur téléphone et ça prend trop de clics. J’ai listé ces irritations, puis réalisé un **mind map** et quelques **croquis (Crazy‑8s)** pour explorer les pistes. J’ai aussi regardé ce qui existe sur les stores et sur les forums TrueNAS/self‑hosted pour voir où une petite app pouvait réellement aider. De là, plusieurs idées sont sorties, dont deux “grosses” que j’ai finalement écartées (voir ci‑dessous), et Open NAS Manager qui restait la plus simple à rendre utile vite.
 
 J’ai utilisé le mind mapping et formulé quelques questions « How might we » pour explorer les opportunités (ex. : Comment réduire les étapes pour désactiver un service ? Comment sécuriser un accès mobile sans stocker le mot de passe ?).
 
@@ -195,17 +195,17 @@ Afin d’objectiver le choix, une grille pondérée a été utilisée. Elle met 
 
 | Idée                          | Impact | Faisabilité | Temps | Monétisation | Différenciation | Apprentissage | **Total pondéré** |
 | ----------------------------- | :----: | :---------: | :---: | :----------: | :-------------: | :-----------: | :---------------: |
-| **TrueNAS Mobile**            |    5   |      4      |   4   |       4      |        4        |       4       |      **4.25**     |
+| **Open NAS Manager**            |    5   |      4      |   4   |       4      |        4        |       4       |      **4.25**     |
 | Orchestrateur multi‑NAS/Cloud |    4   |      2      |   2   |       3      |        4        |       4       |        3.00       |
 | Assistant “Jarvis”            |    4   |      2      |   1   |       2      |        4        |       5       |        2.65       |
 
-La lecture de cette matrice montre que **TrueNAS Mobile** offre le meilleur compromis entre valeur, risque et délai.
+La lecture de cette matrice montre que **Open NAS Manager** offre le meilleur compromis entre valeur, risque et délai.
 
 ---
 
 ### 4) Décision & affinage
 
-J’ai choisi **TrueNAS Mobile** parce qu’elle répond à un besoin très concret : sur mobile, je veux voir l’état du serveur et activer/désactiver un service en quelques secondes, sans galérer dans l’UI Web. Techniquement, c’est aussi celle que je peux livrer rapidement : l’API REST v2 de TrueNAS est documentée et testable facilement sur le réseau local. Le périmètre du MVP est volontairement petit (connexion avec token chiffré, un tableau de bord clair, la liste des services avec un interrupteur) pour tenir le délai tout en offrant une vraie valeur. Les extensions à moyen terme sont déjà évidentes : notifications (SMART/températures), multi‑serveurs, explorateur de fichiers via WebDAV, et un accès distant guidé (Tailscale/Cloudflare Tunnel).
+J’ai choisi **Open NAS Manager** parce qu’elle répond à un besoin très concret : sur mobile, je veux voir l’état du serveur et activer/désactiver un service en quelques secondes, sans galérer dans l’UI Web. Techniquement, c’est aussi celle que je peux livrer rapidement : l’API REST v2 de TrueNAS est documentée et testable facilement sur le réseau local. Le périmètre du MVP est volontairement petit (connexion avec token chiffré, un tableau de bord clair, la liste des services avec un interrupteur) pour tenir le délai tout en offrant une vraie valeur. Les extensions à moyen terme sont déjà évidentes : notifications (SMART/températures), multi‑serveurs, explorateur de fichiers via WebDAV, et un accès distant guidé (Tailscale/Cloudflare Tunnel).
 
 **Cible utilisateur :** utilisateurs de TrueNAS à domicile (home‑lab) et petites équipes/PME qui veulent un accès rapide et sécurisé à leur NAS depuis un smartphone.
 
